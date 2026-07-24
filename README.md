@@ -182,20 +182,6 @@ Aplikasi menyediakan endpoint API untuk kebutuhan integrasi atau pengujian mengg
 ### 13. Export Excel
 ![Export Excel](Screenshot/exportexcel1.png)
 
-## Tempat Pemanggilan Foto
-
-Kalau foto disimpan di folder `public/screenshots`, maka pemanggilannya di README cukup seperti ini:
-
-```md
-
-```
-
-Contoh:
-
-```md
-
-```
-
 Kalau foto disimpan di `storage/app/public/screenshots`, maka:
 1. jalankan:
 ```bash
