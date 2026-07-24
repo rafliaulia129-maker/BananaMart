@@ -1,84 +1,147 @@
-# BananaMart
+<div align="center">
 
-BananaMart adalah aplikasi web penjualan pisang berbasis Laravel yang dibuat untuk memenuhi tugas Ujian Akhir Semester Pemrograman Web Lanjut. Aplikasi ini mendukung autentikasi pengguna, manajemen produk, transaksi pembelian, dashboard, export laporan, REST API, serta pemisahan hak akses antara admin dan user. [file:1428]
+# 🍌 BananaMart  
+### Aplikasi Web Penjualan Pisang Berbasis Laravel
 
-## Identitas
+![Laravel](https://img.shields.io/badge/Laravel-Framework-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-Backend-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Status](https://img.shields.io/badge/Project-UAS%20Selesai-success?style=for-the-badge)
 
-- **Nama: Muhammad Rafli Daffa Aulia** 
-- **NIM: 240170160** 
-- **Kelas: Pemograman Web A7** 
+**Mata Kuliah Pemrograman Web Lanjut**  
+**Program Studi Teknik Informatika**  
+**Fakultas Teknik**  
+**Universitas Malikussaleh**
 
-## Deskripsi Aplikasi
+</div>
 
-BananaMart merupakan sistem penjualan pisang yang dirancang untuk membantu proses pengelolaan data produk, transaksi, dan laporan penjualan secara digital. Aplikasi ini menyediakan dua jenis pengguna, yaitu admin dan user, dengan hak akses yang berbeda sesuai kebutuhan sistem. [file:1428]
+---
 
-## Fitur Utama
+## 📌 Deskripsi Singkat
 
-- Autentikasi pengguna.
-- Login dan registrasi.
-- Verifikasi email atau autentikasi sesuai implementasi project.
-- CRUD data produk.
-- CRUD data transaksi.
-- Dashboard berisi ringkasan data.
-- Role admin dan user.
-- REST API untuk data tertentu.
-- Export laporan ke PDF atau Excel.
-- Tampilan responsive untuk desktop dan mobile. [file:1428]
+**BananaMart** adalah aplikasi web penjualan pisang yang dikembangkan menggunakan framework Laravel sebagai bentuk implementasi materi pada mata kuliah **Pemrograman Web Lanjut**. Aplikasi ini dirancang untuk mendigitalisasi proses penjualan, pengelolaan produk, transaksi pembelian, pemantauan data melalui dashboard, pengaturan hak akses pengguna, serta pembuatan laporan dalam format PDF dan Excel. [file:1428]
 
-## Role Pengguna
+Secara fungsional, BananaMart menyediakan dua jenis pengguna, yaitu **admin** dan **user**, yang masing-masing memiliki hak akses berbeda. Admin berperan dalam pengelolaan sistem, sedangkan user berperan sebagai pembeli yang dapat melihat produk, melakukan transaksi, dan memantau riwayat pembelian. Pemisahan role ini merupakan bagian penting dari kebutuhan sistem agar pengelolaan data menjadi lebih aman, terstruktur, dan sesuai dengan skenario aplikasi penjualan modern. [file:1428]
 
-### Admin
-- Mengelola data produk.
-- Mengelola data transaksi.
-- Melihat dashboard.
-- Mengakses export laporan.
-- Mengakses fitur manajemen data.
+---
 
-### User
-- Login ke sistem.
-- Melihat produk.
-- Melakukan transaksi pembelian.
-- Mengunggah bukti pembayaran jika diperlukan.
-- Melihat riwayat transaksi.
+## 👨‍🎓 Identitas Mahasiswa
 
-## Teknologi yang Digunakan
+| Keterangan | Detail |
+|---|---|
+| **Nama** | Muhammad Rafli Daffa Aulia |
+| **NIM** | 240170160 |
+| **Mata Kuliah** | Pemrograman Web Lanjut |
+| **Program Studi** | Teknik Informatika |
+| **Fakultas** | Fakultas Teknik |
+| **Universitas** | Universitas Malikussaleh |
 
-- PHP
-- Laravel
-- MySQL
-- Blade
-- Bootstrap atau CSS Laravel sesuai implementasi project
-- JavaScript
-- Postman untuk pengujian REST API
+---
 
-## Cara Instalasi
+## 🎯 Latar Belakang
 
-1. Clone repository ini.
-2. Masuk ke folder project.
-3. Install dependency Laravel menggunakan Composer.
-4. Copy file `.env.example` menjadi `.env`.
-5. Atur konfigurasi database pada file `.env`.
-6. Generate application key.
-7. Jalankan migrasi dan seeder jika tersedia.
-8. Jalankan server Laravel.
+Perkembangan teknologi informasi mendorong proses penjualan untuk beralih dari sistem manual menuju sistem digital yang lebih cepat, akurat, dan mudah dikelola. Dalam konteks ini, BananaMart dikembangkan sebagai simulasi sistem penjualan berbasis web yang dapat membantu proses pengelolaan data produk, transaksi, dan laporan penjualan secara terintegrasi.
 
-Contoh perintah:
+Melalui project ini, berbagai konsep yang dipelajari dalam perkuliahan diimplementasikan secara nyata, seperti autentikasi pengguna, CRUD, manajemen role, dashboard, REST API, export laporan, hingga desain responsif. Dengan demikian, BananaMart tidak hanya menjadi aplikasi penjualan sederhana, tetapi juga menjadi media pembelajaran untuk menerapkan arsitektur aplikasi web modern menggunakan Laravel. [file:1428]
 
+---
+
+## 🧠 Tujuan Pembuatan Aplikasi
+
+Project BananaMart dibuat dengan tujuan berikut:
+
+- Mengimplementasikan materi Pemrograman Web Lanjut ke dalam project nyata berbasis Laravel.
+- Membangun sistem penjualan online sederhana dengan konsep role-based access control.
+- Mempermudah pengelolaan data produk dan transaksi secara digital.
+- Menyediakan dokumentasi project yang lengkap sebagai bagian dari penilaian UAS.
+- Menampilkan kemampuan integrasi fitur backend, frontend, database, dan dokumentasi dalam satu aplikasi. [file:1428]
+
+---
+
+## ✨ Fitur Utama
+
+| Fitur | Penjelasan |
+|---|---|
+| 🔐 Autentikasi Pengguna | Sistem login dan registrasi untuk mengamankan akses aplikasi |
+| 📧 Verifikasi Akun | Mendukung verifikasi email atau autentikasi sesuai implementasi |
+| 📦 CRUD Produk | Admin dapat menambah, melihat, mengubah, dan menghapus produk |
+| 🧾 CRUD Transaksi | Data transaksi dapat dikelola dan dimonitor |
+| 👥 Role Admin & User | Setiap role memiliki hak akses yang berbeda |
+| 📊 Dashboard | Menampilkan ringkasan informasi dan statistik sederhana |
+| 📑 Export PDF & Excel | Laporan transaksi dapat diekspor sesuai kebutuhan |
+| 🔗 REST API | Menyediakan endpoint API untuk pengujian dengan Postman |
+| 📱 Responsive Design | Tampilan optimal pada desktop maupun perangkat mobile |
+
+Fitur-fitur tersebut sejalan dengan komponen yang diwajibkan dan dianjurkan dalam ketentuan tugas UAS, seperti autentikasi, CRUD, role, dashboard, export laporan, responsive design, serta dokumentasi README. [file:1428]
+
+---
+
+## 👥 Hak Akses Pengguna
+
+### 1. Admin
+Admin memiliki hak akses penuh terhadap sistem, antara lain:
+- Mengelola data produk
+- Mengelola data transaksi
+- Melihat dashboard
+- Mengubah status transaksi dan pembayaran
+- Mengakses fitur export laporan
+- Melakukan monitoring keseluruhan sistem
+
+### 2. User
+User memiliki hak akses terbatas sesuai fungsi pembeli, yaitu:
+- Login ke sistem
+- Melihat daftar produk
+- Melakukan pembelian
+- Mengunggah bukti pembayaran
+- Melihat riwayat transaksi
+- Melihat detail struk transaksi
+
+Pemisahan hak akses ini penting untuk menjaga keamanan data, mencegah penyalahgunaan fitur, dan memastikan setiap pengguna hanya dapat menjalankan fungsi sesuai perannya. [file:1428]
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+Project ini dibangun menggunakan teknologi berikut:
+
+- **PHP** sebagai bahasa pemrograman utama
+- **Laravel** sebagai framework backend
+- **MySQL** sebagai database
+- **Blade Template Engine** untuk tampilan antarmuka
+- **JavaScript** untuk interaksi antarmuka
+- **Postman** untuk pengujian REST API
+- **DomPDF / Laravel Excel** untuk fitur export laporan
+
+Pemilihan Laravel pada project ini memungkinkan pengembangan aplikasi menjadi lebih terstruktur karena Laravel menyediakan sistem routing, middleware, validation, ORM, dan Blade templating yang mendukung pengembangan aplikasi web modern secara efisien. [file:1428]
+
+---
+
+## ⚙️ Cara Instalasi Project
+
+Ikuti langkah berikut untuk menjalankan project secara lokal:
+
+### 1. Clone repository
 ```bash
 git clone https://github.com/username/bananamart.git
 cd bananamart
-composer install
-cp .env.example .env
-php artisan key:generate
-php artisan migrate --seed
-php artisan storage:link
-php artisan serve
 ```
 
-## Konfigurasi Database
+### 2. Install dependency
+```bash
+composer install
+```
 
-Buka file `.env`, lalu sesuaikan bagian berikut:
+### 3. Salin file environment
+```bash
+cp .env.example .env
+```
 
+### 4. Generate application key
+```bash
+php artisan key:generate
+```
+
+### 5. Atur konfigurasi database pada file `.env`
 ```env
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -88,59 +151,70 @@ DB_USERNAME=root
 DB_PASSWORD=
 ```
 
-## Menjalankan Aplikasi
+### 6. Jalankan migrasi dan seeder
+```bash
+php artisan migrate --seed
+```
 
-Gunakan perintah berikut:
+### 7. Hubungkan storage ke public
+```bash
+php artisan storage:link
+```
 
+### 8. Jalankan server Laravel
 ```bash
 php artisan serve
 ```
 
-Lalu buka browser:
-
-```bash
+### 9. Akses aplikasi di browser
+```text
 http://127.0.0.1:8000
 ```
 
-## Akun Demo
+README yang efektif sebaiknya menyediakan langkah instalasi yang jelas, berurutan, dan siap salin agar project mudah dijalankan ulang oleh pembaca atau penguji. [web:1479][web:1486]
 
-### Admin
-- **Email:admin@bananamart.test**
-- **Password:password123** 
+---
 
-### User
-- **Email:pengguna1@gmail.com** [isi email user]
-- **Password:pengguna1123** [isi password user]
+## 🔑 Akun Demo
 
-## Struktur Fitur
+| Role | Email | Password |
+|---|---|---|
+| **Admin** | `admin@bananamart.test` | `password123` |
+| **User** | `pengguna1@gmail.com` | `pengguna1123` |
 
-### Autentikasi
-Sistem menyediakan autentikasi pengguna untuk login dan registrasi. Implementasi autentikasi disesuaikan dengan kebutuhan tugas, yaitu menggunakan autentikasi Laravel dan verifikasi email atau metode lain yang dipilih. [file:1428]
+---
 
-### CRUD
-Aplikasi memiliki fitur CRUD lengkap untuk mengelola data utama seperti produk dan transaksi. Fitur ini menjadi salah satu komponen wajib dalam tugas UAS. [file:1428]
+## 🧩 Penjelasan Fitur Sistem
 
-### Dashboard
-Dashboard menampilkan informasi ringkas seperti jumlah produk, jumlah transaksi, dan data lain yang relevan untuk admin. Dashboard juga menjadi salah satu fitur tambahan yang diminta dalam tugas. [file:1428]
+### 🔐 Autentikasi Pengguna
+Sistem autentikasi berfungsi untuk memastikan bahwa hanya pengguna yang terdaftar yang dapat mengakses fitur tertentu. Dengan fitur ini, keamanan aplikasi menjadi lebih baik karena akses terhadap dashboard, transaksi, dan pengelolaan data tidak dapat dilakukan oleh sembarang pengguna. [file:1428]
 
-### Role Admin dan User
-Sistem memisahkan hak akses admin dan user sehingga setiap pengguna hanya dapat mengakses fitur sesuai perannya. Pemisahan hak akses ini termasuk komponen wajib penilaian. [file:1428]
+### 📦 CRUD Produk
+Fitur CRUD produk memungkinkan admin untuk menambahkan data produk pisang, mengubah informasi produk, memperbarui stok, serta menghapus produk yang tidak lagi dijual. Fitur ini menjadi inti dari aplikasi karena data produk merupakan dasar dari seluruh proses transaksi. [file:1428]
 
-### Export Laporan
-Aplikasi menyediakan export laporan ke PDF atau Excel sesuai implementasi project. Fitur export juga termasuk komponen penilaian tugas. [file:1428]
+### 🧾 CRUD Transaksi
+Fitur transaksi memungkinkan user melakukan pembelian produk, memilih metode pembayaran, mengunggah bukti pembayaran, dan melihat status transaksi. Dari sisi admin, transaksi dapat dipantau dan diperbarui statusnya agar alur pembelian menjadi lebih realistis seperti pada sistem toko online. [file:1428]
 
-### REST API
-Aplikasi menyediakan endpoint API untuk kebutuhan integrasi atau pengujian menggunakan Postman. Dokumentasi hasil pengujian API perlu disertakan di README. [file:1428]
+### 📊 Dashboard
+Dashboard dirancang untuk menampilkan informasi ringkas mengenai kondisi aplikasi, seperti jumlah produk, total transaksi, serta data penting lainnya. Fitur ini membantu admin dalam memantau aktivitas sistem secara cepat tanpa harus membuka seluruh halaman data satu per satu. [file:1428]
 
-## Dokumentasi Screenshot
+### 👥 Manajemen Role
+Penerapan role admin dan user dilakukan untuk membatasi hak akses sesuai kebutuhan. Admin memiliki kontrol penuh terhadap pengelolaan sistem, sementara user hanya dapat menggunakan fitur yang berkaitan dengan proses pembelian dan riwayat transaksi. [file:1428]
 
-> Simpan semua screenshot di folder:
->
-> `public/screenshots/`
->
-> atau
->
-> `storage/app/public/screenshots/` lalu jalankan `php artisan storage:link`.
+### 📑 Export Laporan
+Fitur export laporan memungkinkan data transaksi diunduh ke dalam format **PDF** dan **Excel**. Fitur ini sangat berguna untuk dokumentasi, pelaporan, serta kebutuhan administrasi data penjualan. [file:1428]
+
+### 🔗 REST API
+REST API disediakan untuk menampilkan data tertentu secara terstruktur dalam format JSON dan untuk mendukung pengujian endpoint menggunakan Postman. Fitur ini menunjukkan bahwa aplikasi tidak hanya mendukung antarmuka web, tetapi juga dapat dikembangkan untuk integrasi sistem lain. [file:1428]
+
+### 📱 Responsive Design
+Antarmuka BananaMart dirancang responsif agar tetap nyaman digunakan baik pada layar desktop maupun perangkat mobile. Responsivitas penting agar aplikasi tetap dapat diakses secara optimal dalam berbagai ukuran layar. [file:1428]
+
+---
+
+## 🖼️ Dokumentasi Screenshot
+
+> Semua screenshot dokumentasi disimpan di folder `Screenshot/`.
 
 ### 1. Halaman Login
 ![Halaman Login](Screenshot/login.png)
@@ -148,7 +222,7 @@ Aplikasi menyediakan endpoint API untuk kebutuhan integrasi atau pengujian mengg
 ### 2. Halaman Registrasi
 ![Halaman Registrasi](Screenshot/register.png)
 
-### 3. Verifikasi Email / Google Login
+### 3. Verifikasi Email / Autentikasi
 ![Verifikasi Email](Screenshot/login.png)
 
 ### 4. Dashboard Admin
@@ -164,8 +238,8 @@ Aplikasi menyediakan endpoint API untuk kebutuhan integrasi atau pengujian mengg
 ![CRUD Transaksi](Screenshot/crudtransaksi.png)
 
 ### 8. Role Admin dan User
-![Role Admin dan User](Screenshot/dashboardadmin.png)
-![Role Admin dan User](Screenshot/dashboarduser.png)
+![Role Admin](Screenshot/dashboardadmin.png)
+![Role User](Screenshot/dashboarduser.png)
 
 ### 9. REST API di Postman
 ![REST API Postman](Screenshot/postman.png)
@@ -182,103 +256,96 @@ Aplikasi menyediakan endpoint API untuk kebutuhan integrasi atau pengujian mengg
 ### 13. Export Excel
 ![Export Excel](Screenshot/exportexcel1.png)
 
-Kalau foto disimpan di `storage/app/public/screenshots`, maka:
-1. jalankan:
-```bash
-php artisan storage:link
+README yang baik sebaiknya memuat dokumentasi visual untuk menunjukkan bahwa fitur benar-benar telah berjalan, dan gambar di README GitHub perlu memakai path relatif yang sesuai agar tampil dengan benar. [web:1480][web:1485]
+
+---
+
+## 🖼️ Cara Pemanggilan Gambar
+
+### Pemanggilan gambar di README GitHub
+```md
+
 ```
 
-2. lalu untuk dipanggil di Blade Laravel gunakan:
-```php
-<img src="{{ asset('storage/screenshots/dashboard-admin.png') }}" alt="Dashboard Admin">
-```
-
-3. tetapi untuk file `README.md` di GitHub, lebih aman tetap gunakan folder:
-```text
-public/screenshots/
-```
-agar gambar langsung tampil di repository.
-
-## Contoh Pemanggilan Foto di Blade Laravel
-
-Kalau kamu ingin menampilkan gambar di halaman aplikasi Laravel, gunakan:
-
+### Pemanggilan gambar di Blade Laravel dari folder `public`
 ```php
 <img src="{{ asset('images/banana.png') }}" alt="Banana Image">
 ```
 
-Kalau file ada di:
-```text
-public/images/banana.png
-```
-
-maka pemanggilannya:
-
-```php
-<img src="{{ asset('images/banana.png') }}" alt="Banana Image">
-```
-
-Kalau file ada di:
-```text
-storage/app/public/images/banana.png
-```
-
-maka jalankan dulu:
-
+### Pemanggilan gambar dari folder `storage`
+Jalankan dulu:
 ```bash
 php artisan storage:link
 ```
 
-lalu panggil dengan:
-
+Lalu panggil dengan:
 ```php
 <img src="{{ asset('storage/images/banana.png') }}" alt="Banana Image">
 ```
 
-## Contoh Struktur Folder Screenshot
+---
+
+## 📁 Struktur Folder Dokumentasi
 
 ```text
 bananamart/
 ├── app/
-├── public/
-│   └── screenshots/
-│       ├── login.png
-│       ├── register.png
-│       ├── verifikasi-email.png
-│       ├── dashboard-admin.png
-│       ├── dashboard-user.png
-│       ├── crud-produk.png
-│       ├── crud-transaksi.png
-│       ├── role-admin-user.png
-│       ├── api-postman.png
-│       ├── responsive-desktop.png
-│       ├── responsive-mobile.png
-│       ├── export-pdf.png
-│       └── export-excel.png
+├── Screenshot/
+│   ├── login.png
+│   ├── register.png
+│   ├── dashboardadmin.png
+│   ├── dahsboarduser.png
+│   ├── crud.png
+│   ├── crudtransaksi.png
+│   ├── postman.png
+│   ├── responsive1.png
+│   ├── responsive.png
+│   ├── export-pdf.png
+│   └── exportexcel1.png
 ├── resources/
 ├── routes/
 └── README.md
 ```
 
-## Endpoint API Contoh
+---
 
-Berikut contoh endpoint API yang dapat diuji menggunakan Postman:
+## 🔗 Endpoint API Contoh
 
-- `GET /api/products`
-- `POST /api/products`
-- `GET /api/transactions`
-- `POST /api/transactions`
+| Method | Endpoint | Keterangan |
+|---|---|---|
+| `GET` | `/api/products` | Menampilkan daftar produk |
+| `POST` | `/api/products` | Menambahkan produk baru |
+| `GET` | `/api/transactions` | Menampilkan daftar transaksi |
+| `POST` | `/api/transactions` | Membuat transaksi baru |
 
-> Sesuaikan kembali dengan route API yang benar pada project kamu.
+> Endpoint dapat disesuaikan kembali dengan route API yang aktif pada project.
 
-## Kelebihan Aplikasi
+---
 
-- Memudahkan pengelolaan penjualan pisang.
-- Memiliki tampilan responsive.
-- Memisahkan akses admin dan user.
-- Mendukung dokumentasi dan pengujian API.
-- Mendukung export laporan. [file:1428]
+## 🌟 Kelebihan Aplikasi
 
-## Penutup
+Beberapa kelebihan BananaMart antara lain:
 
-Project BananaMart dibuat sebagai bentuk implementasi materi Pemrograman Web Lanjut dengan menerapkan autentikasi, CRUD, role management, dashboard, REST API, export laporan, serta dokumentasi GitHub README sesuai ketentuan tugas. [file:1428]
+- Mampu mengelola penjualan pisang secara digital
+- Memiliki struktur fitur yang sesuai kebutuhan tugas UAS
+- Menerapkan autentikasi dan pemisahan role pengguna
+- Mendukung proses transaksi dan pelacakan pembayaran
+- Menyediakan dashboard sebagai pusat informasi
+- Memiliki export laporan PDF dan Excel
+- Menyediakan REST API untuk pengembangan lanjutan
+- Mendukung tampilan responsif untuk berbagai perangkat [file:1428]
+
+---
+
+## 📝 Kesimpulan
+
+BananaMart merupakan implementasi aplikasi web penjualan yang dibangun sebagai bentuk penerapan materi pada mata kuliah Pemrograman Web Lanjut. Melalui project ini, konsep-konsep penting seperti autentikasi, CRUD, role management, dashboard, export laporan, REST API, dan responsive design berhasil diterapkan dalam sebuah sistem yang terstruktur dan fungsional. [file:1428]
+
+Selain sebagai pemenuhan tugas UAS, project ini juga menjadi bukti kemampuan dalam merancang, membangun, dan mendokumentasikan aplikasi berbasis Laravel secara utuh, mulai dari sisi backend, frontend, database, hingga dokumentasi GitHub. README yang lengkap dan terstruktur seperti ini membantu pembaca memahami nilai, tujuan, dan cara penggunaan project dengan lebih cepat. [web:1479][web:1486]
+
+<div align="center">
+
+### 🍌 BananaMart  
+**Digitalisasi Penjualan Pisang dengan Laravel**
+
+</div>
