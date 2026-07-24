@@ -1,0 +1,52 @@
+body{
+    background:#FFFDF5;
+}
+
+.card{
+    border-radius:22px;
+}
+
+.premium-input{
+    border-radius:15px;
+    padding:14px;
+    border:2px solid #F4E08A;
+    transition:.3s;
+}
+
+.premium-input:focus{
+
+    border-color:#F9A825;
+
+    box-shadow:0 0 15px rgba(255,193,7,.35);
+
+}
+
+.btn-warning{
+
+    background:linear-gradient(90deg,#FFD54F,#F9A825);
+
+    border:none;
+
+    color:#222;
+
+}
+
+.btn-warning:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 20px rgba(255,193,7,.4);
+
+}
+
+img{
+
+    transition:.3s;
+
+}
+
+img:hover{
+
+    transform:scale(1.05);
+
+}
