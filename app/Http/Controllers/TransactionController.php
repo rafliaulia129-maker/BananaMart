@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreTransactionRequest;
 use App\Models\Product;
 use App\Models\Transaction;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -87,6 +88,20 @@ class TransactionController extends Controller
         );
 
         return view('transactions.show', compact('transaction'));
+    }
+
+    public function exportPdf(Request $request)
+    {
+        $transactions = Transaction::with('user')
+            ->when($request->status, fn ($query) => $query->where('status', $request->status))
+            ->when($request->payment_status, fn ($query) => $query->where('payment_status', $request->payment_status))
+            ->latest()
+            ->get();
+
+        $pdf = Pdf::loadView('admin.transactions.pdf', compact('transactions'))
+            ->setPaper('a4', 'landscape');
+
+        return $pdf->download('laporan-transaksi-bananamart.pdf');
     }
 
     public function index(): JsonResponse

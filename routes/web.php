@@ -43,6 +43,9 @@ Route::middleware(['auth', 'verified', 'admin'])->group(function () {
 
     Route::get('/reports/export/excel', [ReportController::class, 'exportExcel'])
         ->name('reports.export.excel');
+    
+    Route::get('/transactions/export/pdf', [TransactionController::class, 'exportPdf'])
+    ->name('transactions.export.pdf');    
 });
 
 /*
