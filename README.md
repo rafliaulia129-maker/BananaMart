@@ -239,7 +239,7 @@ Antarmuka BananaMart dirancang responsif agar tetap nyaman digunakan baik pada l
 
 ### 8. Role Admin dan User
 ![Role Admin](Screenshot/dashboardadmin.png)
-![Role User](Screenshot/dashboarduser.png)
+![Role User](Screenshot/dahsboarduser.png)
 
 ### 9. REST API di Postman
 ![REST API Postman](Screenshot/postman.png)
