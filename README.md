@@ -260,31 +260,6 @@ README yang baik sebaiknya memuat dokumentasi visual untuk menunjukkan bahwa fit
 
 ---
 
-## 🖼️ Cara Pemanggilan Gambar
-
-### Pemanggilan gambar di README GitHub
-```md
-
-```
-
-### Pemanggilan gambar di Blade Laravel dari folder `public`
-```php
-<img src="{{ asset('images/banana.png') }}" alt="Banana Image">
-```
-
-### Pemanggilan gambar dari folder `storage`
-Jalankan dulu:
-```bash
-php artisan storage:link
-```
-
-Lalu panggil dengan:
-```php
-<img src="{{ asset('storage/images/banana.png') }}" alt="Banana Image">
-```
-
----
-
 ## 📁 Struktur Folder Dokumentasi
 
 ```text
